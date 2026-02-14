@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main()
+{
+    char ch[50];
+    scanf("%s",ch);
+    int y;
+    scanf("%d",&y);
+    printf("%s=%d",ch,y);
+    return 0;
+    
+}
