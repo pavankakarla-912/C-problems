@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main()
+{
+int n,y;
+scanf("%d",&n);
+printf("%d",n);
+scanf("%d",&y);
+printf("%d",y);
+return 0;
+}
