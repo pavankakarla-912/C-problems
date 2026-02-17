@@ -7,7 +7,7 @@ int main (){
         printf("%d is greater",a);
     }
     else{
-        printf("%d isn greater",b);
+        printf("%d is greater",b);
     }
       return 0;
 }
