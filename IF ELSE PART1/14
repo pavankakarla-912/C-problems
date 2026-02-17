@@ -3,7 +3,7 @@ int main(){
     int n;
     scanf("%d",&n);
     if(n%11==0){
-        printf("divisoble by 11");
+        printf("divisible by 11");
     }
     else {
         printf("not divisible by 11");
