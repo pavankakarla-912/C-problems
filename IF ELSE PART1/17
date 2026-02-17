@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main ()
+{
+    int n;
+    scanf("%d",&n);
+    if(n>=10&&n<=20){
+        printf("NUMBER IS WITH IN THE RANGE");
+    }
+    else{
+        printf("NUMBER IS NOT IN THE RANGE");
+    }
+    return 0;
+}
