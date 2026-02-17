@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+    char ch;
+    scanf("%c",&ch);
+    switch(ch){
+        case 'a':
+        printf("voewl");
+        break;
+        case 'e':
+        printf("voewl");
+        break;
+        case 'i':
+        printf("voewl");
+        break;
+        case 'o':
+        printf("voewl");
+        break;
+        case 'u':
+        printf("voewl");
+        break;
+        case 'A':
+        printf("voewl");
+        break;
+        case 'E':
+        printf("voewl");
+        break;
+        case 'I':
+        printf("voewl");
+        break; 
+        case 'O':
+        printf("voewl");
+        break;
+        case 'U':
+        printf("voewl");
+        break;
+        default:{
+            printf("not a vowel");
+        }
+    }
+    return 0;
+}
