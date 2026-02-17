@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main (){
+    int n,year;
+    scanf("%d",&n);
+    switch(n){
+        case 1:case 3:case 5:case 7:case 8:case 10:case 12:
+            printf("has 31 days");
+            break;
+        case 4:case 6:case 9:case 11:
+            printf("has 30 days");
+            break;
+        case 2:
+        printf("enter the year = ");
+        scanf("%d",&year);
+        if(year%4==0&&year%100!=0||year%400==0){
+            printf("it is a leap year and feb has  29 days");
+        } 
+        else{
+            printf("it has 28 days");
+        }
+    }
+    return 0;
+}
+}
