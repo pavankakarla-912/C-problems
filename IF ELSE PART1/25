@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main(){
+    int n1,n2;
+    scanf("%d %d",&n1,&n2);
+    printf("enter the operater(1 = +,  2 = -,  3 = *,  4 = /) = ");
+    int n;
+    scanf("%d",&n);
+    switch (n){
+        case 1:
+        printf("resulu=%d",n1+n2);
+        break;
+        case 2:
+        printf("result=%d",n1-n2);
+        break;
+        case 3:
+        printf("result=%d",n1*n2);
+        break;
+        case 4:
+        printf("result=%d",n1/n2);
+        break;
+        default:{
+            printf("invalid");
+        }
+    }
+    return 0;
+}
