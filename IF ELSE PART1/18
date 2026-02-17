@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main (){
+    int units;
+    scanf("%d",&units);
+    if(units<=75&&units>=0){
+        printf("%d",units*1);
+    }
+    else if(units>75&&units<=120){
+        printf("%d",75+(units-75)*5);
+    }
+    else{
+        printf("%d",75+45*5+(units-120)*7);
+    }
+    return 0;
+}
