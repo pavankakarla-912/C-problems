@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int login_attempt;
+    scanf("%d",&login_attempt);
+    if(login_attempt>3){
+        printf("account locaked");
+    }
+    else{
+        printf("login");
+    }
+    return 0;
+}
