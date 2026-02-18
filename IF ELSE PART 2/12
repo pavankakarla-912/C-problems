@@ -1,0 +1,16 @@
+#include <stdio.h>
+int mian()
+{
+    int age;
+    scanf("%d",&age);
+    if(age<12&&age>=1){
+        printf("discount ticket");
+    }
+    else if(age>=12){
+        printf("regular ticket");
+    }
+    else{
+        printf("invalid input");
+    }
+    return 0;
+}
