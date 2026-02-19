@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int account_blance;
+    scanf("%d",&account_blance);
+    if(account_blance>=1000){
+        printf("sufficient balance");
+    }
+    else{
+        printf("low balance");
+    }
+    return 0;
+}
