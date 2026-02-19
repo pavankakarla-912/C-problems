@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int days;
+    scanf("%d",&days);
+    if(days>7){
+        printf("fine applied");
+    }
+    else if(days<=7&&days>=1){
+        printf("no fine");
+    }
+    else {
+        printf("invalid input");
+    }
+    return 0;
+}
