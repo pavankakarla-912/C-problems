@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int temp;
+    scanf("%d",&temp);
+    if(temp>=0&&temp<=18){
+        printf("heating mode");
+    }
+    else if(temp>=19&&temp<35){
+        printf("normal mode");
+    }
+    else if(temp>=36&&temp<=100){
+        printf("colling mode");
+    }
+    else{
+        printf("invalid input");
+    }
+    return 0;
+}
