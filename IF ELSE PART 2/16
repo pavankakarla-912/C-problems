@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    float water_level;
+    scanf("%f",&water_level);
+    if(water_level>90){
+        printf("over flow");
+    }
+    else{
+        printf("safe level");
+    }
+    return 0;
+}
