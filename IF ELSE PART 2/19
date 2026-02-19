@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int marks;
+    scanf("%d",&marks);
+    if(marks<=35&&marks>=0){
+        printf("pass");
+    }
+    else if(marks>60&&marks<=100){
+        printf("distinction");
+    }
+    else{
+        printf("invalid input");
+    }
+    return 0;
+}
