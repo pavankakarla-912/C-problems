@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+    int attendence;
+    scanf("%d",&attendence);
+    if(attendence>=75&&attendence<=100){
+        printf("eligible foe exam");
+    }
+    else if(attendence<75&&attendence>=0){
+        printf("not eligible for exam");
+    }
+    else{
+        printf("invalid input");
+    }
+    return 0;
+}
