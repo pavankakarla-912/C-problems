@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+     int connection_type;
+     int units;
+     scanf("%d",&connection_type);
+     scanf("%d",&units);
+     switch(connection_type){
+         case 1:
+         if(units<=100&&units>=0){
+             printf("%d",units*3-80);}
+         else if (units>100&&units<=1000){
+             printf("%d",100*3+(units-100)*5-80);
+         }
+         else{
+             printf("invalid input");
+         }
+         break;
+         case 2: 
+         if(units<=100&&units>=0){
+             printf("%d",units*7);}
+         else if (units>100&&units<=1000){
+             printf("%d",100*7+(units-100)*10);
+         }
+         else{
+             printf("invalid input");
+         }
+         break;
+         default:
+             printf("enter valid input");
+         }
+     return 0;
+ }
