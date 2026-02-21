@@ -1,0 +1,30 @@
+ #include<stdio.h>
+ int main ()
+ {
+     int travel_class;
+     int age;    
+     scanf("%d",&travel_class);
+     scanf("%d",&age);
+     switch(travel_class){
+         case 1:
+         if(age<12&&age>=1){
+             printf("fare=$%.2f",300-(300*0.5));
+         }
+         else if (age>=60) {                                            
+             printf("fare=$%.2f",300-(300*0.33));
+         }
+         else {
+             printf("fare=$300");
+         }
+         break;
+         case 2:
+         if(age<12&&age>=1){
+             printf("fare=$%.2f",1000-(1000*0.5));
+         }
+         else {
+             printf("fare=$1000");
+         }
+         break;
+     }
+     return 0;
+ }
