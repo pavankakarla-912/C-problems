@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int type;
+    char ch;
+    scanf("%d",&type);
+    scanf(" %c",&ch);
+
+    switch(type){
+        case 1:
+        if(ch=='A'||ch=='a'){
+            printf("$2500");
+        }
+        else if(ch=='B'||ch=='b'){
+            printf("$2000");
+        }   
+      break;
+        case 2:
+        if(ch=='C'||ch=='c'){
+            printf("$4000");
+        }
+        else if(ch=='D'||ch=='d'){
+            printf("$3000");
+        }
+        break;
+        default:
+        printf("invalid input");
+    }
+    return 0;
+}
