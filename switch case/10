@@ -1,0 +1,29 @@
+#include<stdio.h>
+int mian()
+{
+    int code;
+    int experirence;
+    scanf("%d",&code);
+    scanf("%d",&experirence);
+    switch (code){
+        case 1:
+        if(experirence>=3){
+            printf("%d",50000+experirence*5000);
+        }
+        else{
+            printf("%d",50000);
+        }
+        break;
+        case 2:
+        if(experirence>=3){
+            printf("%d",35000+experirence*5000);
+        }
+        else{
+            printf("%d",35000);
+        }
+        break;
+        default:
+        printf("invalid input");
+    }
+    return 0;
+}
