@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    int upi_method;
+    scanf("%d",&n);
+    scanf("%d",&upi_method);
+    switch(n) {
+        case 1:
+        if(upi_method==1||upi_method==2){
+            printf("pay=$%d",199-20);
+        }
+        else {
+            printf("pay=$%d",199);
+        }
+        break;
+        case 2:
+        if(upi_method==1||upi_method==2){
+            printf("pay=$%d",399-20);
+        }
+        else{
+            printf("pay=$%d",399);
+        }
+        break;
+    }
+    return 0;
+}
