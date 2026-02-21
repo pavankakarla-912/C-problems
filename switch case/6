@@ -1,0 +1,26 @@
+include<stdio.h>
+int main ()
+{
+    int speed;
+    int order_amount;
+    scanf("%d",&speed);
+    scanf("%d",&order_amount);
+   switch(speed){
+        case 1:
+        printf("%d",order_amount+50);
+        break;
+        case 2:
+        if(order_amount<1000&&order_amount>=0){
+            printf("%d",order_amount+100);
+        }
+        else if (order_amount>=1000){
+            printf("%d",order_amount);
+        }
+        else{
+            printf("enter the correct amount");
+        }
+        default:
+        printf("enter the valid input");
+    }
+    return 0;
+}
