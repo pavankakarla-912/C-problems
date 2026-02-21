@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int account_type;
+    int years;
+    scanf("%d",&account_type);
+    scanf("%d",&years);
+    switch(account_type){
+        case 1:
+        if(years>0){
+        printf("intrest 4%");
+        }
+        else{
+            printf("invalid input");
+        }
+        break;
+        case 2:
+        if(years<=3&&years>=1){
+            printf("intrest 5%");
+        }
+        else if (years>3){
+            printf("intrest 7%");
+        }
+        else{
+            printf("invalid input");
+        }
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
