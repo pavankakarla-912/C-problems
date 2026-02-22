@@ -1,0 +1,32 @@
+#include<stdio.h>
+ int main ()
+ {
+     int vehicle_type;
+     int tripe;
+     scanf("%d",&vehicle_type);
+     scanf("%d",&tripe);
+     switch(vehicle_type){
+         case 1:
+         if(tripe==1){
+             printf("$100");
+         }
+         else if(tripe>=2){
+             printf("monthly pass");
+         }
+         else{
+             printf("enter valid no.of tripes");
+         }
+         break;
+         case 2:
+         if(tripe>=1){
+             printf("$%d",tripe*240);
+         }
+         else{
+             printf("enter valid no.of tripes");
+         }
+         break;
+         default:
+         printf("enter valid input");
+     }
+     return 0;
+ }
