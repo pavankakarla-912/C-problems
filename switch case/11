@@ -1,0 +1,35 @@
+#include<stdio.h>
+ int main()
+ {
+     int plantype;
+     float dataused;
+     scanf("%d",&plantype);
+     scanf("%f",&dataused);
+     switch(plantype){
+         case 1:
+         if(dataused<=1){
+             printf("normal speed");
+         }
+         else if (dataused>1){
+             printf("speed reduced");
+         }
+         else{
+             printf("invalid input");
+         }
+          break;
+          case 2:
+          if(dataused<=2){
+             printf("normal speed");
+         }
+         else if (dataused>2){
+             printf("extra charges applied");
+         }
+         else{
+                         printf("invalid input");
+         }
+         break;
+         default:
+         printf("enter valid input");
+     }
+     return 0;
+}
