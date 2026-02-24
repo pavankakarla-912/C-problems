@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main()
+{
+    int vehicle_category;
+    int vehicle_age;
+    scanf("%d",&vehicle_category);
+    scanf("%d",&vehicle_age);
+    switch(vehicle_category){
+        case 1:
+        if(vehicle_age<=5&&vehicle_age>=1){
+            printf("$1500");
+        }
+        else if(vehicle_age>5){
+            printf("$2500");
+        }
+        else{
+            printf("invalid input");
+        }
+        break;
+        case 2:
+        if(vehicle_age<=5&&vehicle_age>=1){
+            printf("$4000");
+        }
+        else if(vehicle_age>5){
+            printf("$6000");
+        }
+        else{
+            printf("invalid input");
+        }
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
