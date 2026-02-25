@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int vehical_type;
+    int hours;
+    scanf("%d",&vehical_type);
+    scanf("%d",&hours);
+    switch(vehical_type){
+        case 1:
+        printf("parking fee=%d",hours*10);
+        break;
+        case 2:
+        printf("parking fee=%d",hours*20);
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
