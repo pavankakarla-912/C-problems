@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int delay_days;   
+    scanf("%d",&delay_days);
+    switch((delay_days-1)/5){
+        case 0:
+        printf("fine $ %d",delay_days*50);
+        break;
+        case 1:
+        printf("fine $ %d",delay_days*100);
+        break;
+        default:
+        printf("%d",delay_days*200);
+    }
+    return 0;
+}
