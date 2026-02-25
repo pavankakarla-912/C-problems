@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int connection_type;
+    int units;
+    scanf("%d",&connection_type);
+    scanf("%d",&units);
+    switch(connection_type){
+        case 1:
+        if(units<=30&&units>=0){
+            printf("$ %d",units*5);
+        }
+        else if (units>30){
+            printf("$ %d",30*5+(units-30)*8);
+        }
+        else {
+            printf("invalid input");
+        }
+        break;
+        case 2:
+        printf("%d",units*10);
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
