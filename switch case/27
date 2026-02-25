@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int delivary_mode;
+    scanf("%d",&delivary_mode);
+    switch(delivary_mode){
+    case 1:
+    printf("delivary charges $ 40");
+    break;
+    case 2:
+    printf("delivary charges $ 120");
+    break;
+    case 3:
+    printf("delivary charges $ 0");
+    break;
+    default:
+    printf("enter valid input");
+    }
+    return 0;
+}
