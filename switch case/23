@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int customer_type;
+    int bill_amount;
+    scanf("%d",&customer_type);
+    scanf("%d",&bill_amount);
+    switch(customer_type){
+        case 1:
+        printf("pay $ %.2f",bill_amount-bill_amount*0.05);
+        break;
+        case 2:
+        printf("pay $ %.2f",bill_amount-bill_amount*0.15);
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
