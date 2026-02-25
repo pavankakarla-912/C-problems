@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int call_type;
+    int minutes;
+    scanf("%d",&call_type);
+    scanf("%d",&minutes);
+    switch(call_type){
+        case 1:
+        printf("call charges $ %d",minutes*1);
+        break;
+        case 2:
+        printf("call charges $ %d",minutes*3);
+        break;
+        case 3:
+        printf("call charges $ %d",minutes*10);
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
