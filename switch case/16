@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int flight_class;
+    int weight;
+    scanf("%d",&flight_class);
+    scanf("%d",&weight);
+    switch(flight_class){
+        case 1:
+        printf("%d",weight*300);
+           break;
+        case 2:
+        if(weight>=0&&weight<=3){
+            printf("no charges applied ");
+        }
+        else if(weight>3){
+            printf("%d",(weight-3)*300);
+        }
+        else{
+            printf("invalid input");
+        }
+        break;
+        default:
+        printf("invalid input");
+    }
+    return 0;
+}
