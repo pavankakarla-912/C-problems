@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int category;
+    scanf("%d",&category);
+    switch(category){
+    case 1:
+    printf("exam fee $ 1200");
+    break;
+    case 2:
+    printf("exam fee $ 800");
+    break;
+    case 3:
+    printf("exam fee $ 500");
+    break;
+    default:
+    printf("enter valid input");
+    }
+    return 0;
+}
