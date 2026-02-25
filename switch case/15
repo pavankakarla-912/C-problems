@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+   int course_mode;
+    int student_category;
+    scanf("%d",&course_mode);
+    scanf("%d",&student_category);
+    switch(course_mode){
+        case 1:
+          switch(student_category){
+            case 1:
+                printf("$5000");
+            break;
+            case 2:
+                printf("$3000");
+            break;
+            default:
+            printf("invalid input");
+           }
+        break;
+        case 2:
+          switch(student_category){
+            case 1:
+                printf("$9000");
+            break;
+            case 2:
+                printf("$7000");
+            break;
+            default:
+            printf("invalid input");
+           }
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
