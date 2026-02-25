@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int vehicle_type;
+    int distance;
+    scanf("%d",&vehicle_type);
+    scanf("%d",&distance);
+    switch(vehicle_type){
+        case 1:
+        printf(" fare $ %d",distance*10);
+        break;
+        case 2:
+        printf(" fare $ %d",distance*15);
+        break;
+        case 3:
+        printf(" fare $ %d",distance*20);
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
