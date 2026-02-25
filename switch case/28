@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int room_type;
+    scanf("%d",&room_type);
+    switch(room_type){
+    case 1:
+    printf("hostal fee $ 80000");
+    break;
+    case 2:
+    printf("hostal fee $ 60000");
+    break;
+    case 3:
+    printf("hostal fee $ 45000");
+    break;
+    default:
+    printf("enter valid input");
+    }
+    return 0;
+}
