@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+    int distance;
+    int category;
+    scanf("%d",&category);
+    scanf("%d",&distance);
+    switch(category){
+        case 1:
+        if(distance<=30&&distance>=1){
+            printf("eligible");
+        }
+        else if(distance>30&&distance<=100){
+            printf("eligible with extra fee");
+        }
+        else{
+            printf("not eligible");
+        }
+        break;
+        case 2:
+        if(distance<=30&&distance>=1){
+            printf("eligible");
+        }
+        else{
+            printf("not eligible");
+        }
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
