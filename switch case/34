@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main ()
+{
+    int plan_type;
+    scanf("%d",&plan_type);
+    switch(plan_type){
+        case 1:
+        printf("speed 40 mbps");
+        break;
+        case 2:
+        printf("speed 100 mbps");
+        break;
+        case 3:
+        printf("speed 300 mbps");
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
