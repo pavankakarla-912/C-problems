@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main ()
+{
+    int violation_type;;
+    scanf("%d",&violation_type);
+    switch(violation_type){
+        case 1:
+        printf("fine $ 1000");
+        break;
+        case 2:
+        printf("fine $ 1500");
+        break;
+        case 3:
+        printf("fine $ 2000");
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
