@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main ()
+{
+    int duration_type;
+    scanf("%d",&duration_type);
+    switch(duration_type){
+        case 1:
+        printf("membership fee $ 1500");
+        break;
+        case 2:
+        printf("membership fee $ 4000");
+        break;
+        case 3:
+        printf("membership fee $ 7000");
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
