@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main ()
+{
+    int class_type;
+    scanf("%d",&class_type);
+    switch(class_type){
+        case 1:
+        printf("upgrade fee $ 300");
+        break;
+        case 2:
+        printf("upgrade fee $ 800");
+        break;
+        case 3:
+        printf("upgrade fee $ 1500");
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
