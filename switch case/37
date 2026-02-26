@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main ()
+{
+    int course_type;
+    scanf("%d",&course_type);
+    switch(course_type){
+        case 1:
+        printf("certificate fee $ 0");
+        break;
+        case 2:
+        printf("certificate fee $ 500");
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
