@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int book_type;
+    int days_late;
+    scanf("%d",&book_type);
+    scanf("%d",&days_late);
+    switch(book_type){
+        case 1:
+        printf("late fee $ %d",days_late*2);
+        break;
+        case 2:
+        printf("late fee $ %d",days_late*5);
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
