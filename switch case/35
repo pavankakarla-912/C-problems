@@ -1,0 +1,21 @@
+ #include<stdio.h>
+ int main(){
+     int fuel_type;
+     int litres;
+     scanf("%d",&fuel_type);
+     scanf("%d",&litres);
+     switch(fuel_type){
+         case 1:
+         printf("fuel cost $ %d",litres*105);
+         break;
+         case 2:
+         printf("fuel cost  $ %d",litres*92);
+         break;
+         case 3:
+         printf("fuel cost  $ %d",litres*85);
+         break;
+         default:
+         printf("enter valid input");
+     }
+     return 0;
+ }
