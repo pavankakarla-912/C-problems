@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main ()
+{
+    int doctor_type;
+    scanf("%d",&doctor_type);
+    switch(doctor_type){
+        case 1:
+        printf("consultation fee $ 500");
+        break;
+        case 2:
+        printf("consultation fee $ 1200");
+        break;
+        default:
+        printf("enter valid input");
+    }
+    return 0;
+}
