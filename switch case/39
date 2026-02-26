@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main ()
+{
+    int distance_category;
+    scanf("%d",&distance_category);
+    switch((distance_category-1)/5){
+        case 0:
+        printf("transportfee fee $ 800");
+        break;
+        case 1:
+        printf("transportfee fee $ 1200");
+        break;
+        default:
+        printf("transportfee fee $ 1800");
+    }
+    return 0;
+}
