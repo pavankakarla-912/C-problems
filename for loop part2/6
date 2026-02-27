@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+    int passenger,i;
+    int fare,sum=0;
+    scanf("%d",&passenger);
+    for(i=0;i<passenger;i++){
+        scanf("%d",&fare);
+        sum=sum+fare;
+    }
+    printf("total collection : %d",sum);
+    return 0;
+}
