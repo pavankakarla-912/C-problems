@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int x,temp;
+    scanf("%d",&x);
+    int a=0;
+    int b=1;
+    int i;
+    if(x>=1){
+        printf("%d ",a);
+    }
+    if(x>=2){
+        printf("%d ",b);
+    }
+    for(i=2;i<x;i++){
+        temp=a+b;
+        a=b;
+        b=temp;
+        printf("%d ",temp);
+    }
+    return 0;
+}
