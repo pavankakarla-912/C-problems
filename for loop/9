@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main()
+{
+    int x,count=0,i;
+    scanf("%d",&x);
+    for(i=x;i!=0;i=i/10)
+    {
+        count ++;
+    }   
+    printf("%d",count);
+    return 0;
+}
