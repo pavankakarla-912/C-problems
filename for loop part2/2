@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int n_withdrawl;
+    int n_amount;
+    int i,sum;
+    scanf("%d",&n_withdrawl);
+    for(i=0;i<n_withdrawl;i++){
+        scanf("%d",&n_amount);
+    }
+    if(sum<=10000){
+        printf("approved");
+    }
+    else{
+        printf("limit exceed");
+    }
+    return 0;
+}
