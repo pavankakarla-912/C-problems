@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int days,count=0,i;
+    int daily_expenses,sum=0;
+    scanf("%d",&days);
+    for(i=1;i<=days;i++){
+        scanf("%d",&daily_expenses);
+        sum=sum+daily_expenses;
+        if(daily_expenses>1000){
+            count++;
+        }
+    }
+    printf("over spend days : %d\n",count);
+    printf("Total expense : %d\n",sum);
+    return 0;
+}
