@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int base;
+    int expo;
+    int flag=1;
+    int result=1;
+    int i;
+    scanf("%d %d",&base,&expo);
+    if(expo==0){
+        printf("%d",flag);
+    }
+    for(i=1;i<=expo;i++){
+        result=result*base;
+    }
+    printf("%d",result);
+    return 0;
+}
