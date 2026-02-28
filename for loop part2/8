@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int days,i;
+    int daily_loss,sum=0,count;
+    scanf("%d",&days);
+    for(i=0;i<days;i++){
+        scanf("%d",&daily_loss);
+        sum=sum+daily_loss;
+        if(daily_loss>100){
+            count ++;
+        }
+    }
+    printf("total loss : %d\n",sum);
+    printf("high loss days : %d",count);
+    return 0;
+}
