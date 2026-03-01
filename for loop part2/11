@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main ()
+{
+    int days,patients,sum,count=0;
+    scanf("%d",&days);
+    int i;
+    for(i=0;i<days;i++){
+        scanf("%d",&patients);
+        sum+=patients;
+        if(patients>100){
+        }
+    }
+    printf("total patients : %d\n",sum);
+    printf("over crowed days : %d",count);
+    return 0;
+}
