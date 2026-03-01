@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int days,i,sum=0,count;
+    scanf("%d",&days);
+    int usage_data;
+    for(i=0;i<days;i++){
+        scanf("%d",&usage_data);
+        sum+=usage_data;
+        if(usage_data>2){
+            count++;
+        }
+    }
+    printf("Total data  :  %d\n" , sum);
+    printf("Higa usage days : %d",count);
+    return 0;
+}
