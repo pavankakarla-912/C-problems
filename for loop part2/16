@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int amount,i;
+    int withdrawl;
+    int withdrawl_amount;
+    int remaining_cash,sum=0,count=0;
+    scanf("%d",&amount);
+    scanf("%d",&withdrawl);
+    for (i=0;i<withdrawl;i++){
+        scanf("%d",&withdrawl_amount);
+        sum+=withdrawl_amount;
+        remaining_cash=amount-sum;
+        if(remaining_cash<5000){
+            count ++;
+        }
+    }
+    remaining_cash=amount-sum;
+    printf("remaining cash : %d\n",remaining_cash);
+    printf("risk count : %d",count);
+    return 0;
+}
