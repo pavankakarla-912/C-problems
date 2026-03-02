@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int days;
+    scanf("%d",&days);
+    int rate[days];
+    int i,j;
+    int max,count=0;
+    for(i=0;i<days;i++){
+        scanf("%d",&rate[i]);
+        if(rate[i]>100){
+            count ++;
+        }
+    }
+    max=rate[0];
+    for(j=1;j<days;j++){
+        if(max<rate[j]){
+            max=rate[j];
+        }
+    }
+    printf("highest price : %d\n",max);
+    printf("highest price days : %d",count);
+    return 0;
+}
