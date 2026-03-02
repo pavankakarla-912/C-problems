@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+    int deliveries;
+    int delay_min;
+    int count=0,sum=0;
+    scanf("%d",&deliveries);
+    int i;
+    for(i=0;i<deliveries;i++){
+        scanf("%d",&delay_min);
+        sum+=delay_min;
+        if(delay_min>30){
+            count ++;
+        }
+    }
+    printf("total delay : %d\n",sum);
+    printf("delayed deliveries : %d",count);
+    return 0;
+}
