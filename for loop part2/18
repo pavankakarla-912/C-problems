@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int over_time_hours;
+    int over_time_cost;
+    int count=0,sum=0;
+    int i;
+    for(i=0;i<n;i++){
+        scanf("%d",&over_time_hours);
+        sum+=over_time_hours;
+        if (over_time_hours>3){
+            count ++;
+        }
+    }
+    over_time_cost=sum*200;
+    printf("total over time : %d\n",sum);
+    printf("over time cost : %d\n",over_time_cost);
+    printf("heavy over time : %d",count);
+    return 0;
+}
