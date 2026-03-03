@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int hours;
+    int units_consumed;
+    scanf("%d",&hours);
+    int i,count=0,sum=0;
+    for(i=0;i<hours;i++){
+        scanf("%d",&units_consumed);
+        sum+=units_consumed;
+        if(units_consumed>5){
+            count++;
+        }
+    }
+    printf("Total units : %d\n",sum);
+    printf("Spike hours : %d",count);
+    return 0;
+}
