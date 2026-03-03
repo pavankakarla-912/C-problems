@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int n,count=0,i,j,max;
+    scanf("%d",&n);
+    int heart_rate[n];
+    for (i=0;i<n;i++){
+        scanf("%d",&heart_rate[i]);
+        if(heart_rate[i]>140){
+            count++;
+        }
+    }
+    max=heart_rate[0];
+    for(j=1;j<n;j++){
+        if(heart_rate[j]>max){
+            max=heart_rate[j];
+        }
+    }
+    printf("Maximum Heart Rate : %d\n",max);
+    printf("Danger Reading : %d",count);
+    return 0;
+}
