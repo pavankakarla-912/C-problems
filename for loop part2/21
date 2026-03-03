@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int capacity;
+    int n,count=0;
+    int items_recived;
+    int sum=0,remaining_capacity;;
+    scanf("%d",&capacity);
+    scanf("%d",&n);
+    int i;
+    for(i=0;i<n;i++){
+        scanf("%d",&items_recived);
+        sum=sum+items_recived;
+        if(items_recived>50){
+            count++;
+        }
+    }
+    remaining_capacity=capacity-sum;
+    printf("Remaining capacity : %d\n",remaining_capacity);
+    printf("Over flow days : %d",count);
+    return 0;
+}
