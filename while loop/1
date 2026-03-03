@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int totalData,n;
+    scanf("%d %d",&totalData,&n);
+    int data_usage[n];
+    int remaining_data;
+    int i=0,sum=0,count=0;
+    while(i<n){
+        scanf("%d",&data_usage[i]);
+        sum=sum+data_usage[i];
+        int remaining_data=totalData-sum;
+        if(sum<=totalData){
+            count++;
+        }
+        i++;
+    }
+    remaining_data=totalData-sum;
+    printf("Days used : %d\n",count);
+    if(remaining_data<=0){
+        printf("Remaining data : 0 GB\n");
+    }
+    else{
+        printf("Remaining data : %d\n",remaining_data);
+    }
+    return 0;
+}
