@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int n,calls_hour;
+    scanf("%d",&n);
+    int calls,sum=0,i,count=0;
+    for(i=0;i<n;i++){
+        scanf("%d",&calls_hour);
+        sum+=calls_hour;
+        if(calls_hour>40){
+            count++;
+        }
+    }
+    printf("Total calls : %d\n",sum);
+    printf("Overloaded Hours : %d",count);
+    return 0;
+}
