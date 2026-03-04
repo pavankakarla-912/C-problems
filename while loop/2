@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int status[n];
+    int i=0,count1=0,count2=0;
+    while(i<n){
+        scanf("%d",&status[i]);
+        if(status[i]==1){
+            count1++;
+        }
+        if(status[i]==0){
+            count2++;
+        }
+        i++;
+    }
+    printf("Successful : %d\n",count1);
+    printf("Cancelled : %d\n",count2);
+    if(count1>=count2){
+        printf("Status : safe");
+    }
+    else{
+        printf("Status : Risk");
+    }
+    return 0;
+}
