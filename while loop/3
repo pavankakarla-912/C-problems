@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+    int fuel;
+    int n,i=0,sum=0;
+    int fuel_trip,count=0,remaining_fuel=0;
+    scanf("%d",&fuel);
+    scanf("%d",&n);
+    while (i<n){
+        scanf("%d",&fuel_trip);
+        sum+=fuel_trip;
+        if(sum<=fuel){
+            count ++;
+            remaining_fuel=fuel-sum;
+        }
+        i++;
+    }
+    printf("remaining fuel : %d\n",remaining_fuel);
+    printf("completed trips : %d\n",count);
+    return 0;
+}
