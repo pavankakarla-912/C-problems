@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int weeks,i=0,count=0;
+    int hours_studied_week;
+    scanf("%d",&weeks);
+    while(i<weeks){
+        scanf("%d",&hours_studied_week);
+        if(hours_studied_week==0){
+            count++;
+        }
+        i++;
+    }
+    if(count>=weeks/2){
+        printf("risk status : High\n");
+    }
+    else{
+        printf("risk status : Low\n");
+    }
+    printf("inactive days : %d\n",count);
+    return 0;
+}
+
+
+    
