@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int usage_kw[n];
+    int i=0,j=1,count=0,max;
+    while(i<n)
+    {
+        scanf("%d",&usage_kw[i]);
+        if(usage_kw[i]>5){
+            count++;
+        }
+        i++;
+    }
+    max=usage_kw[0];
+        while(j<n){
+        if(usage_kw[j]>max){
+            max=usage_kw[j];
+        }      
+      j++;
+    }
+    printf("max usage : %d\n",max);
+    printf("surge Hours : %d",count);
+    return 0;
+}
