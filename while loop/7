@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+    int datapackGb;
+    int n,i=0,count=0;
+    scanf("%d",&datapackGb);
+    scanf("%d",&n);
+    int usage_gb[n];
+    while(i<n){
+        scanf("%d",&usage_gb[i]);
+        if(usage_gb[i]>3){
+            count++;
+        }
+        i++;
+    }
+    i=0;
+    while(i<n){
+        datapackGb-=usage_gb[i];
+        if(datapackGb<=0){
+            printf("exhausted Day : %d\n",i+1);
+            break;
+        }
+        i++;
+        }
+    if(datapackGb>0){
+        printf("exhausted Day :Not exhausted\n");
+    }
+    printf("overused Data :%d\n",count);
+    return 0;
+}
