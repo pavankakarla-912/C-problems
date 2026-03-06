@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int wallet_balance;
+    int n,i=0,sum=0,count=0;
+    int purchase_amount,remaining_balance;
+    scanf("%d",&wallet_balance);
+    int account_balance=wallet_balance;
+    scanf("%d",&n);
+    while(i<n)
+    {             
+        scanf("%d",&purchase_amount);
+        sum+=purchase_amount;
+        if(sum<=wallet_balance){
+            count++;
+            remaining_balance=wallet_balance-sum;
+        }
+        i++;
+    }
+    printf("Successful Purchases : %d\n",count);
+    printf("final Balance : %d\n",remaining_balance);
+    return 0;
+}
