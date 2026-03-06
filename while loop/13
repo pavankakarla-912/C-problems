@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    int max_capacity;
+    int n,i=0,sum=0;
+    int patients_hour;
+    scanf("%d",&max_capacity);
+    scanf("%d",&n);
+    while(i<n){
+        scanf("%d",&patients_hour);
+        sum+=patients_hour;
+        i++;
+    }
+    if(sum>max_capacity){
+        printf("treated Patients : %d\n",max_capacity);
+        printf("rejected Patients : %d\n",sum-max_capacity);
+    }
+    if(sum<max_capacity){
+        printf("treated Patients : %d\n",sum);
+        printf("rejected Patients : 0");
+    }
+    return 0;
+}
