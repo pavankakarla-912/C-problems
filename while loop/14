@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int max_weight,n,passenger_weight;
+    int i=0,count=0,sum=0;
+    scanf("%d",&max_weight);
+    scanf("%d",&n);
+    while (i<n){
+        scanf("%d",&passenger_weight);
+        sum+=passenger_weight;
+        if(sum<=max_weight){
+            count++;
+        }
+        i++;
+    }
+    if(sum>max_weight){
+            printf("over load : Yes\n");
+        }
+        else{
+            printf("over load : No\n");
+        }
+    printf("passengers allowed :%d",count);
+    return 0;
+}
