@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+    int delay;
+    int delay_hours,i=0,sum=0,count=0;
+    scanf("%d",&delay);
+    while(i<delay){
+        scanf("%d",&delay_hours);
+        sum+=delay_hours;
+        if(delay_hours>2){
+            count++;
+        }
+        i++;
+    }
+    printf("total delay : %d\n",sum);
+    printf("delay days : %d",count);
+    return 0;
+}
