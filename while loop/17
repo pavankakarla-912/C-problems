@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int fuel;
+    int n,fuelburns,i=0,sum=0,count=0;
+    scanf("%d %d",&fuel,&n);
+    while(i<n){
+        scanf("%d",&fuelburns);
+        sum+=fuelburns;
+        if(sum<=fuel){
+            count++;
+        }
+        i++;
+    }
+    printf("Emergency stage  %d\n",count);
+    if(sum<=fuel){
+            printf("Fuel wasted : 0");
+        }
+        else{
+            printf("Fuel wasted : %d",sum-fuel);
+        }
+    return 0;
+}
