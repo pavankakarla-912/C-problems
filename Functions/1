@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main()
+{
+    float principle,rate,time;
+    scanf("%f %f %f",&principle,&rate,&time);
+    printf("simple intrest : %.2f",(principle*rate*time/100));
+    return 0;
+}
