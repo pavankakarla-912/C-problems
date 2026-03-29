@@ -1,0 +1,43 @@
+#include <stdio.h>
+struct Student
+{
+    int id;
+    char name[50];
+    float marks;
+};
+void addStudents(struct Student s[], int n) {
+    for(int i = 0; i < n; i++) {
+        printf("Enter ID, Name, Marks for student %d:\n", i + 1);
+        scanf("%d %s %f", &s[i].id, s[i].name, &s[i].marks);
+    }
+}
+void displayStudents(struct Student s[], int n) {
+    printf("\nStudent Records:\n");
+    for(int i = 0; i < n; i++) {
+        printf("ID: %d | Name: %s | Marks: %.2f\n", 
+               s[i].id, s[i].name, s[i].marks);
+    }
+}
+void findTopper(struct Student s[], int n) {
+    int topIndex = 0;
+
+    for(int i = 1; i < n; i++) {
+        if(s[i].marks > s[topIndex].marks) {
+            topIndex = i;
+        }
+    }
+    printf("\nTop Scorer:\n");
+    printf("ID: %d | Name: %s | Marks: %.2f\n",
+           s[topIndex].id, s[topIndex].name, s[topIndex].marks);
+}
+int main() 
+{
+    int n;
+    printf("Enter number of students: ");
+    scanf("%d", &n);
+    struct Student s[n];
+    addStudents(s, n);
+    displayStudents(s, n);
+    findTopper(s, n);
+    return 0;
+}
