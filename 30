@@ -49,7 +49,7 @@ int main()
             break;
         }
         else {
-            printf("Invalid choice\n");
+            printf("invalid choice\n");
         }
     }
 
