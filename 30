@@ -1,0 +1,57 @@
+#include <stdio.h>
+#include <string.h>
+struct student 
+{
+    int id;
+    char name[50];
+    float marks;
+};
+int main() 
+{
+    struct student s[100];
+    int n,i,choice,search_id,found;
+    printf("enter number of students: ");
+    scanf("%d", &n);
+    for(i = 0; i < n; i++) {
+        printf("Enter ID, Name, Marks: ");
+        scanf("%d %s %f", &s[i].id, s[i].name, &s[i].marks);
+    }
+    while(1) 
+    {
+        printf("\n1.Display\n2.Search\n3.Exit\nEnter choice:");
+        scanf("%d", &choice);
+        if(choice == 1) {
+            for(i = 0; i < n; i++) {
+                printf("ID: %d name: %s Marks: %.2f\n",s[i].id,s[i].name,s[i].marks);
+            }
+        }
+        else if(choice == 2) 
+        {
+            printf("enter ID to search: ");
+            scanf("%d", &search_id);
+            found = 0;
+            for(i = 0; i < n; i++) 
+            {
+                if(s[i].id==search_id) 
+                {
+                    printf("Found: %d %s %.2f\n",s[i].id,s[i].name,s[i].marks);
+                    found = 1;
+                    break;
+                }
+            }
+            if(found == 0) 
+            {
+                printf("student not found\n");
+            }
+        }
+        else if(choice==3) 
+        {
+            break;
+        }
+        else {
+            printf("Invalid choice\n");
+        }
+    }
+
+    return 0;
+}
